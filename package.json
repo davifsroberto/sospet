@@ -18,9 +18,16 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "eslint src --max-warnings=0",
+    "test": "jest --verbose",
     "pretty:format": "prettier --config ./.prettierrc.js --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
     "pretty:check": "prettier --config ./.prettierrc.js --check \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
     "postinstall": "husky install"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   },
   "lint-staged": {
     "src/**/*": [
@@ -39,6 +46,8 @@
     "expo": "~46.0.9",
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
+    "jest": "^26.6.3",
+    "jest-expo": "^46.0.1",
     "native-base": "^3.4.15",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -50,6 +59,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@testing-library/jest-native": "^4.0.12",
+    "@testing-library/react-native": "^11.0.0",
+    "@types/jest": "^29.0.2",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "^8.23.1",
@@ -58,6 +70,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "react-test-renderer": "17",
     "yarn": "^1.22.19"
   }
 }
