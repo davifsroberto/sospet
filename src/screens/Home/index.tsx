@@ -3,8 +3,8 @@ import React from 'react';
 
 export function SigIn() {
   return (
-     <Center height={'full'}>
+    <Center height={'full'}>
       <Box>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Box>
     </Center>
-  )
+  );
 }
