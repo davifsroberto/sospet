@@ -25,7 +25,8 @@
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
-      "yarn run pretty:format"
+      "yarn run pretty:format",
+      "git add"
     ]
   },
   "eslintConfig": {
