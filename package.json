@@ -24,8 +24,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
       "yarn run pretty:format",
+      "yarn lint --fix",
       "git add ."
     ]
   },
