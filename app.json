@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "sospet",
+    "slug": "sospet",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
