@@ -2,23 +2,59 @@
   "name": "sospet",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
+  "author": {
+    "name": "Davi Roberto",
+    "nickname": "davifsroberto",
+    "email": "davifsroberto@outlook.com",
+    "url": "https://davifsroberto.github.io",
+    "linkedin": "https://linkedin.com/in/davifsroberto",
+    "github": "https://github.com/davifsroberto",
+    "medium": "https://medium.com/@davifsroberto"
+  },
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint src --max-warnings=0",
+    "pretty:format": "prettier --config ./.prettierrc --write \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "pretty:check": "prettier --config ./.prettierrc --check \"./**/*.{ts,js,tsx,json,css,scss,html}\"",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn run pretty:check"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "universe/native"
   },
   "dependencies": {
+    "@expo/webpack-config": "^0.17.0",
+    "@types/react": "~18.0.0",
+    "@types/react-native": "~0.69.1",
     "expo": "~46.0.9",
     "expo-splash-screen": "~0.16.2",
     "expo-status-bar": "~1.4.0",
+    "native-base": "^3.4.15",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.5",
-    "react-native-web": "~0.18.7"
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "~0.18.7",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
-  },
-  "private": true
+    "@babel/core": "^7.12.9",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-config-universe": "^11.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "yarn": "^1.22.19"
+  }
 }

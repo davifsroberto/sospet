@@ -1,0 +1,6 @@
+.husky
+.expo
+coverage
+public/
+android
+ios
