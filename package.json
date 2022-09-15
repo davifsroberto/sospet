@@ -26,7 +26,7 @@
     "src/**/*": [
       "yarn lint --fix",
       "yarn run pretty:format",
-      "git add"
+      "git add ."
     ]
   },
   "eslintConfig": {

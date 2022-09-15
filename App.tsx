@@ -5,8 +5,8 @@ import { SigIn } from './src/screens/Home';
 
 export default function App() {
   return (
-        <NativeBaseProvider>
+    <NativeBaseProvider>
       <SigIn />
     </NativeBaseProvider>
-   )
+  );
 }
