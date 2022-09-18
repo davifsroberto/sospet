@@ -1,3 +1,3 @@
 describe('Home', () => {
-  it('Just config tests in boilerplate', () => {});
+  it('Just config tests', () => {});
 });
