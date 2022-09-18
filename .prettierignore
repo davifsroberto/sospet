@@ -1,6 +1,7 @@
 .husky
 .expo
 coverage
+assets
 public/
 android
 ios

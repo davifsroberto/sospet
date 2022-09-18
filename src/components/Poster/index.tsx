@@ -22,7 +22,7 @@ export function Poster({ poster }: PosterProps) {
   return (
     <Box alignItems="center">
       <Box
-        w={['96', 'md']}
+        width={['96']}
         rounded="lg"
         overflow="hidden"
         borderColor="coolGray.200"
@@ -77,10 +77,14 @@ export function Poster({ poster }: PosterProps) {
           </HStack>
         </Stack>
 
-        <Button roundedTop="none" width="full" bgColor="lightBlue.700">
-          <Text fontWeight="bold" color="white" fontSize="lg">
+        <Button
+          endIcon={<Icon as={FontAwesome} name="paw" size="sm" color="white" />}
+          roundedTop="none"
+          width="full"
+          bgColor="lightBlue.700"
+        >
+          <Text lineHeight="xs" fontWeight="bold" color="white" fontSize="lg">
             HELP ME &nbsp;
-            <Icon as={FontAwesome} name="paw" size="sm" color="white" />
           </Text>
         </Button>
       </Box>

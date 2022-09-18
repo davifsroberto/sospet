@@ -1,6 +1,7 @@
+import { Header } from '@components/Header';
 import { Poster } from '@components/Poster';
-import { ScrollView, View } from 'native-base';
 import React from 'react';
+import { FlatGrid } from 'react-native-super-grid';
 import { PosterType } from 'src/types/poster.type';
 
 const posters: PosterType[] = [
@@ -60,12 +61,14 @@ const posters: PosterType[] = [
 
 export function Home() {
   return (
-    <ScrollView>
-      {posters.map((posters, index) => (
-        <View margin="2" key={index}>
-          <Poster poster={posters} />
-        </View>
-      ))}
-    </ScrollView>
+    <>
+      <Header />
+
+      <FlatGrid
+        data={posters}
+        renderItem={({ item, index }) => <Poster poster={item} key={index} />}
+        itemDimension={300}
+      />
+    </>
   );
 }
