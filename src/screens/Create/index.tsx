@@ -1,10 +1,10 @@
 import { View } from 'native-base';
 
-export function Create() {
+export function CreateScreen() {
   // TODO: Implement Create
   return (
     <>
-      <View></View>
+      <View>Lorem ipsum dolor</View>
     </>
   );
 }

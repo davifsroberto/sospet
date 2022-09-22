@@ -59,7 +59,7 @@ const posters: PosterType[] = [
   },
 ];
 
-export function Home() {
+export function HomeScreen() {
   return (
     <>
       <Header />
