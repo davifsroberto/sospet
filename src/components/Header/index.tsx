@@ -20,7 +20,7 @@ export function Header() {
       <HStack
         bg="lightBlue.500"
         px="4"
-        mb="4"
+        mb="1"
         py="1"
         justifyContent="space-between"
         alignItems="center"
