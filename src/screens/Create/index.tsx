@@ -1,40 +1,23 @@
-import { Header } from '@components/Header';
-import {
-  Text,
-  View,
-  Center,
-  Box,
-  FormControl,
-  Input,
-  WarningOutlineIcon,
-} from 'native-base';
+import { Header } from '@containers/Header';
+import { Box, Text, Stack, Center } from 'native-base';
 import React from 'react';
 
 export function CreateScreen() {
   return (
-    <>
+    <Box backgroundColor="lightBlue.100" height="full">
       <Header />
 
-      <View>
-        <Center>
+      {/* TODO: Implement this screen */}
+      <Stack textAlign="center" w="90%" maxW="full" mx="auto">
+        <Center mb="4">
           <Text fontSize="2xl">Create an Ad</Text>
-          <Text fontSize="lg">We will help you find your pet</Text>
+          <Text fontSize="lg">
+            Select the ad option, we will help you and your Pet.
+          </Text>
 
-          <Box alignItems="center">
-            <FormControl isInvalid>
-              <FormControl.Label>Password</FormControl.Label>
-              <Input placeholder="Enter password" />
-              <FormControl.ErrorMessage
-                leftIcon={<WarningOutlineIcon size="xs" />}
-              >
-                Try different from previous passwords.
-              </FormControl.ErrorMessage>
-
-              <Input variant="underlined" placeholder="Underlined" />
-            </FormControl>
-          </Box>
+          {/* TODO: IMPLEMENT: create rule for call correct screen, Donate, Missing or Found */}
         </Center>
-      </View>
-    </>
+      </Stack>
+    </Box>
   );
 }

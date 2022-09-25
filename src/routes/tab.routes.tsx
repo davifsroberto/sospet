@@ -1,13 +1,13 @@
 import { Ionicons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { CreateScreen } from '@screens/Create';
+import { CreateOptionScreen } from '@screens/CreateOption';
 import { HomeScreen } from '@screens/Home';
 import { Icon } from 'native-base';
 import React from 'react';
 
 const { Screen, Navigator } = createBottomTabNavigator();
 
-export function DrawerRoutes() {
+export function TabRoutes() {
   return (
     <Navigator
       initialRouteName="Home"
@@ -42,7 +42,7 @@ export function DrawerRoutes() {
 
       <Screen
         name="Create"
-        component={CreateScreen}
+        component={CreateOptionScreen}
         options={{ headerTitle: '' }}
       />
     </Navigator>

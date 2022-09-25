@@ -80,7 +80,7 @@ export function Poster({ poster }: PosterProps) {
         <Button
           endIcon={<Icon as={FontAwesome} name="paw" size="sm" color="white" />}
           roundedTop="none"
-          width="full"
+          w="full"
           bgColor="lightBlue.700"
         >
           <Text lineHeight="xs" fontWeight="bold" color="white" fontSize="lg">

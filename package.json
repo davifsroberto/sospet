@@ -14,6 +14,7 @@
   },
   "scripts": {
     "start": "expo start --dev-client",
+    "npx:start": "npx expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
@@ -57,8 +58,8 @@
     "react-native": "0.69.5",
     "react-native-gesture-handler": "~2.5.0",
     "react-native-reanimated": "~2.9.1",
-    "react-native-safe-area-context": "^4.3.3",
-    "react-native-screens": "^3.17.0",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
     "react-native-super-grid": "^4.6.1",
     "react-native-svg": "12.3.0",
     "react-native-web": "~0.18.7",

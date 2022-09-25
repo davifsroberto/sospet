@@ -3,8 +3,11 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["./src/components/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@types/*": ["./src/types/*"]
+      "@atoms/*": ["./src/atoms/*"],
+      "@molecules/*": ["./src/molecules/*"],
+      "@organisms/*": ["./src/organisms/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@screens/*": ["./src/screens/*"]
     },
     "strict": true
   },

@@ -1,5 +1,5 @@
-import { Header } from '@components/Header';
-import { Poster } from '@components/Poster';
+import { Poster } from '@components/molecules/Poster';
+import { Header } from '@containers/Header';
 import React from 'react';
 import { FlatGrid } from 'react-native-super-grid';
 import { PosterType } from 'src/types/poster.type';
